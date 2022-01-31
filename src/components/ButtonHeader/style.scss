@@ -1,0 +1,22 @@
+.btnHeader {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  &:hover {
+    background-color: lightgray;
+    color: black;
+  }
+}
+
+.inputSearch {
+  border: none;
+  outline: none;
+  max-width: 15rem;
+  height: 3rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
