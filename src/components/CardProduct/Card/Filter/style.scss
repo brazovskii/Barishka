@@ -1,0 +1,18 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  &__link {
+    color: black;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    &:focus{
+      border-radius: 0;
+      border-bottom: 0.1rem solid black;
+    }
+  }
+}

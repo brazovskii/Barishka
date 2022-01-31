@@ -14,14 +14,14 @@
   font-size: 1.5rem;
   border-radius: 1rem;
   margin: 1rem 1rem;
-
-  &:focus {
-    background-color: black;
-    color: white;
-  }
-
-  &:disabled {
-    background-color: lightgray;
-    color: black;
-  }
 }
+.manAndGirl:focus {
+  background-color: black;
+  color: white;
+}
+.manAndGirl:disabled {
+  background-color: lightgray;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

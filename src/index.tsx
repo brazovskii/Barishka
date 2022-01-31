@@ -1,14 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {Normalize} from "styled-normalize";
-import Navigator from "../src/Navigator/Navigator";
+import {BrowserRouter} from "react-router-dom";
+import App from "../src/Navigator/Navigator";
 // import {Provider} from "react-redux";
 // import { store } from "./store";
 
 ReactDOM.render(
     <React.StrictMode>
-        <Normalize/>
-        <Navigator/>
+        <BrowserRouter>
+            <Normalize/>
+            <App/>
+        </BrowserRouter>
     </React.StrictMode>,
     document.getElementById("root")
 );

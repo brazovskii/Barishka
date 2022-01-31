@@ -6,10 +6,14 @@
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
-  &:hover {
-    background-color: lightgray;
-    color: black;
-  }
+}
+.btnHeader:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+.head {
+  margin: 0 7rem;
 }
 
 .inputSearch {
@@ -20,3 +24,12 @@
   border-radius: 1rem;
   font-size: 2rem;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
