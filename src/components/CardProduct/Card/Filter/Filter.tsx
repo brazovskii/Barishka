@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import "./style.scss";
-import { Link, Outlet, useParams } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { ILink } from "../../../../models/ILink";
 
 const MASSLINK: ILink[] = [
@@ -13,7 +13,6 @@ const MASSLINK: ILink[] = [
 ];
 
 const Filter: FC = () => {
-  const params = useParams();
   return (
     <>
       <div className="filter">

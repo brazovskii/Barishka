@@ -1,18 +1,18 @@
 import React, { useState, useEffect, FC } from "react";
 import "./style.scss";
 import { ICollection } from "../../../models/ICollection";
-import { Outlet } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 import Filter from "./Filter/Filter";
 
 const Photos = () => {
   const [photos, setPhotos] = useState<ICollection[]>([]);
-
+  const params = useParams();
   useEffect(() => {
     getPhotos();
   }, []);
 
-  const getPhotos = async () => {
-    const response = await fetch(`http://localhost:5000/${human}`);
+  const getPhotos = async (human = "girl") => {
+    const response = await fetch(`http://localhost:5000/${params.human}`);
     const data = await response.json();
     setPhotos(data);
   };
