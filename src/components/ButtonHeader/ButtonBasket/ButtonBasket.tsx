@@ -1,21 +1,15 @@
 import React, { FC } from "react";
 import "../../../components/ButtonHeader/style.scss";
-import { useHistory } from "react-router-dom";
+import { useHistory ,Link } from "react-router-dom";
 
 const ButtonBasket: FC = () => {
-  const history = useHistory();
-  const onBtnBasket = () => {
-    history.push(`/basket`);
-  };
+
   return (
-    <button
+    <Link to='/basket'
       className="btnHeader"
-      onClick={() => {
-        onBtnBasket();
-      }}
     >
       🛒| 0
-    </button>
+    </Link>
   );
 };
 

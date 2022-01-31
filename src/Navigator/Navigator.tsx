@@ -7,12 +7,12 @@ import Collection from "../components/Сollection/Сollection";
 import Location from "../components/Location/Location";
 import Search from "../components/Search/Search";
 import Basket from "../components/Basket/Basket";
-// import Photos from "../components/CardProduct/Card/Card";
+import Photos from "../components/CardProduct/Card/Card";
 
 export default function App() {
     return (
         <Router>
-            <div className="header">
+            <div className="header__navigator">
                 <Switch>
                     <Route path="/">
                         <Main/>
@@ -22,7 +22,7 @@ export default function App() {
                         <Route path="/collection">
                             <Collection/>
                             <Route path="/collection/man"></Route>
-                            <Route path="/collection/girl"></Route>
+                            <Route path="/collection/girl"><Photos/></Route>
                         </Route>
                         <Route path="/location">
                             <Location/>
