@@ -7,12 +7,13 @@ import Filter from "./Filter/Filter";
 const Photos = () => {
   const [photos, setPhotos] = useState<ICollection[]>([]);
   const params = useParams();
+
   useEffect(() => {
     getPhotos();
   }, []);
 
-  const getPhotos = async (human = "girl") => {
-    const response = await fetch(`http://localhost:5000/${params.human}`);
+  const getPhotos = async () => {
+    const response = await fetch(`http://localhost:5000/girl`);
     const data = await response.json();
     setPhotos(data);
   };
@@ -45,8 +46,8 @@ const Photos = () => {
             </div>
           );
         })}
-        <Outlet />
       </div>
+      <Outlet />
     </>
   );
 };
