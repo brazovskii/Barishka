@@ -2,9 +2,9 @@ import React, { useState, useEffect, FC } from "react";
 import "./style.scss";
 import { ICollection } from "../../../models/ICollection";
 import { Outlet, useParams } from "react-router-dom";
-import Filter from "./Filter/Filter";
+import Filter from "../../Filter/Filter";
 
-const Photos = () => {
+const Card = () => {
   const [photos, setPhotos] = useState<ICollection[]>([]);
   const params = useParams();
 
@@ -13,7 +13,7 @@ const Photos = () => {
   }, []);
 
   const getPhotos = async () => {
-    const response = await fetch(`http://localhost:5000/girl`);
+    const response = await fetch(``);
     const data = await response.json();
     setPhotos(data);
   };
@@ -52,4 +52,4 @@ const Photos = () => {
   );
 };
 
-export default Photos;
+export default Card;

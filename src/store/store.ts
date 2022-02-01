@@ -1,11 +1,14 @@
-import { configureStore, combineReducers } from "@reduxjs/toolkit";
+import {configureStore, combineReducers} from "@reduxjs/toolkit";
+import collectionReducer from './reducers/CollectionSlice'
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+    collectionReducer,
+});
 
 export const setupStore = () => {
-  return configureStore({
-    reducer: rootReducer,
-  });
+    return configureStore({
+        reducer: rootReducer,
+    });
 };
 
 export type AppDispatch = AppStore["dispatch"];

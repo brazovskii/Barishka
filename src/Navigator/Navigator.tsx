@@ -5,7 +5,7 @@ import Layout from "../components/Layout/Layout";
 import Home from "../components/Home/Home";
 import Search from "../components/Search/Search";
 import Basket from "../components/Basket/Basket";
-import Photos from "../components/CardProduct/Card/Card";
+import Card from "../components/CardProduct/Card/Card";
 import Privet from "../components/Privet/Privet";
 
 export default function App() {
@@ -13,11 +13,11 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="girl" element={<Photos />}>
-          <Route path=":filter" element={<Privet />} />
+        <Route path="girl" element={<Card />}>
+          <Route path=":filter" element={<Card />} />
         </Route>
-        <Route path="man" element={<Photos />}>
-          <Route path=":filter" element={<Privet />} />
+        <Route path="man" element={<Card />}>
+          <Route path=":filter" element={<Card />} />
         </Route>
         <Route path="search" element={<Search />} />
         <Route path="basket" element={<Basket />} />
