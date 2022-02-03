@@ -1,55 +1,44 @@
-import React, { useState, useEffect, FC } from "react";
+import React, {FC, useEffect} from "react";
 import "./style.scss";
-import { ICollection } from "../../../models/ICollection";
-import { Outlet, useParams } from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import Filter from "../../Filter/Filter";
+import {useAppDispatch, useAppSelector} from "../../../hooks/redux";
+import {collectionSlice, fetchCollection} from "../../../store/reducers/CollectionSlice";
 
-const Card = () => {
-  const [photos, setPhotos] = useState<ICollection[]>([]);
-  const params = useParams();
+interface ICard {
+    descriptions: string;
+    img: string;
+    price: number;
+}
 
-  useEffect(() => {
-    getPhotos();
-  }, []);
-
-  const getPhotos = async () => {
-    const response = await fetch(``);
-    const data = await response.json();
-    setPhotos(data);
-  };
-
-  return (
-    <>
-      <Filter />
-      <div className={"card"}>
-        {photos.map((item) => {
-          return (
-            <div className={"card__header"} key={item.id}>
-              <div className={"card__body"}>
-                <p className={"card__description"}>{item.descriptions}</p>
-                <img
-                  className={"card__picture"}
-                  src={item.img}
-                  alt={"clothes"}
-                />
-              </div>
-              <div className={"card__section"}>
-                <div className={"card__section"}>
-                  <button className={"card__btn--size"}>M</button>
-                  <button className={"card__btn--size"}>S</button>
-                  <button className={"card__btn--size"}>L</button>
-                  <button className={"card__btn--size"}>XL</button>
+const Card: FC<ICard> = ({descriptions, img, price}) => {
+    return (
+        <>
+            <div className={"card"}>
+                <div className={"card__header"}>
+                    <div className={"card__body"}>
+                        <p className={"card__description"}>{descriptions}</p>
+                        <img
+                            className={"card__picture"}
+                            src={img}
+                            alt={"clothes"}
+                        />
+                    </div>
+                    <div className={"card__section"}>
+                        <div className={"card__section"}>
+                            <button className={"card__btn--size"}>M</button>
+                            <button className={"card__btn--size"}>S</button>
+                            <button className={"card__btn--size"}>L</button>
+                            <button className={"card__btn--size"}>XL</button>
+                        </div>
+                        <p className={"card__price"}>{`${price}p`}</p>
+                    </div>
+                    <button className="card__button--btn">Купить</button>
                 </div>
-                <p className={"card__price"}>{`${item.price}p`}</p>
-              </div>
-              <button className="card__button--btn">Купить</button>
             </div>
-          );
-        })}
-      </div>
-      <Outlet />
-    </>
-  );
+            <Outlet/>
+        </>
+    );
 };
 
 export default Card;

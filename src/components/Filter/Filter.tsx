@@ -1,7 +1,7 @@
 import React, {FC} from "react";
 import "./style.scss";
-import {Link} from "react-router-dom";
-import {ILink} from "../../models/ILink";
+import {Link, NavLink, Outlet} from "react-router-dom";
+import {ILink, IUrl} from "../../models/ILink";
 
 const MASSLINK: ILink[] = [
     {id: 100, url: "outerwear", name: "Верхняя одежда"},
@@ -12,18 +12,20 @@ const MASSLINK: ILink[] = [
     {id: 105, url: "accessories", name: "Аксессуары"},
 ];
 
-const Filter: FC = () => {
+
+const Filter = () => {
     return (
         <>
             <div className="filter">
                 {MASSLINK.map((el) => {
                     return (
-                        <Link to={`/girl/${el.url}`} key={el.id} className={"filter__link"}>
+                        <NavLink to={`/?name=girl&category=${el.url}`} key={el.id} className={'filter__link'}>
                             {el.name}
-                        </Link>
+                        </NavLink>
                     );
                 })}
             </div>
+            <Outlet/>
         </>
     );
 };

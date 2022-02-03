@@ -1,8 +1,10 @@
 import {configureStore, combineReducers} from "@reduxjs/toolkit";
 import collectionReducer from './reducers/CollectionSlice'
+import urlReducer from './reducers/UrlSlice'
 
 const rootReducer = combineReducers({
     collectionReducer,
+    urlReducer,
 });
 
 export const setupStore = () => {

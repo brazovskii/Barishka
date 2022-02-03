@@ -3,3 +3,7 @@ export interface ILink {
     url: string;
     name: string;
 }
+
+export interface IUrl {
+    url: string;
+}

@@ -1,37 +1,53 @@
 import {ICollection} from "../../models/ICollection";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {fetchCollection} from "./CollectionActionCreators";
+import axios from "axios";
+import {AppDispatch} from "../store";
+
+// import {fetchCollection} from "./CollectionActionCreators";
 
 interface CardState {
-    collection: ICollection[];
+    clothes: ICollection[];
     isLoading: boolean;
     error: string;
 }
 
 const initialState: CardState = {
-    collection: [],
+    clothes: [],
     isLoading: false,
-    error: ''
+    error: '',
 }
 
 export const collectionSlice = createSlice({
     name: 'collection',
     initialState,
-    reducers: {},
-    extraReducers: {
-        [fetchCollection.fulfilled.type]: (state, action: PayloadAction<ICollection[]>) => {
-            state.isLoading = false;
-            state.error = "";
-            state.collection = action.payload;
-        },
-        [fetchCollection.pending.type]: (state) => {
+    reducers: {
+        collectionFetching(state) {
             state.isLoading = true;
         },
-        [fetchCollection.rejected.type]: (state, action: PayloadAction<string>) => {
+        collectionFetchingSuccess(state, action: PayloadAction<ICollection[]>) {
+            state.isLoading = false;
+            state.error = "";
+            state.clothes = action.payload;
+        },
+        collectionFetchingError(state, action: PayloadAction<string>) {
             state.isLoading = false;
             state.error = action.payload;
-        },
-    }
+        }
+    },
 })
+
+
+export const fetchCollection = () => async (dispatch: AppDispatch) => {
+    try {
+        dispatch(collectionSlice.actions.collectionFetching());
+        const response = await axios.get<ICollection[]>(
+            `http://localhost:5000/clothes`
+        );
+        dispatch(collectionSlice.actions.collectionFetchingSuccess(response.data));
+    } catch (e: any) {
+        dispatch(collectionSlice.actions.collectionFetchingError(e.message));
+    }
+};
+
 
 export default collectionSlice.reducer;

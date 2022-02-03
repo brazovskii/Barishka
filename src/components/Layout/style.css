@@ -1,5 +1,4 @@
 .btnHeader {
-  background-color: black;
   border: none;
   color: white;
   padding: 1.5rem 3rem;
@@ -30,6 +29,11 @@
   justify-content: space-between;
   align-items: center;
   background-color: black;
+}
+
+.qwe {
+  z-index: 1;
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
