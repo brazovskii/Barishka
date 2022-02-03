@@ -1,12 +1,5 @@
 .card {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-.card__header {
-  display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
 }
@@ -17,6 +10,7 @@
   justify-content: center;
 }
 .card__body:hover .card__description {
+  text-align: center;
   opacity: 1;
   transition: 0.5s;
 }
@@ -30,8 +24,8 @@
   opacity: 0;
 }
 .card__picture {
-  max-width: 20rem;
-  max-height: 50rem;
+  max-width: 18rem;
+  max-height: 40rem;
   border-radius: 1rem;
 }
 .card__section {

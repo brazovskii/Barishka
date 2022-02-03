@@ -1,4 +1,4 @@
-export interface ICollection {
+export interface IClothes {
     id: number;
     price: number;
     img: string;

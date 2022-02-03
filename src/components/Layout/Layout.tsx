@@ -1,23 +1,32 @@
-import React, {FC, useEffect} from "react";
+import React from "react";
 import "./style.scss";
 import {Outlet, Link, useSearchParams} from "react-router-dom";
+import man from "../Man/Man";
+import {useAppDispatch} from "../../hooks/redux";
+import {getUrlHuman} from "../../store/reducers/UrlSlice";
 
-const Layout: FC = () => {
+const Layout= () => {
     let [searchParams, setSearchParams] = useSearchParams();
+    const dispatch = useAppDispatch()
+
     return (
         <div className={"head"}>
             <nav className="nav">
                 <Link to={"/"} className={"btnHeader"}>
                     {"Barishka"}
                 </Link>
-                <Link to={`/?name=girl`} className={"btnHeader"}
+                <Link to={`girl`} className={"btnHeader"} onClick={() => {
+                    dispatch(getUrlHuman('girl'))
+                }}
                 >
                     {"Girl"}
                 </Link>
-                <Link to={`/?name=man`} className={"btnHeader"}>
+                <Link to={`man`} className={"btnHeader"} onClick={() => {
+                    dispatch(getUrlHuman('man'))
+                }}>
                     {"Man"}
                 </Link>
-                <Link to={`/?name=girl&description=`} className={"btnHeader"}>
+                <Link to={`search`} className={"btnHeader"}>
                     <input
                         className="inputSearch"
                         placeholder=" Search..."
@@ -32,7 +41,6 @@ const Layout: FC = () => {
                         }}
                     />
                 </Link>
-
                 <Link to={`/basket`} className={"btnHeader"}>
                     {"Basket"}
                 </Link>

@@ -1,4 +1,4 @@
-import {ICollection} from "../../models/ICollection";
+import {IClothes} from "../../models/IClothes";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import axios from "axios";
 import {AppDispatch} from "../store";
@@ -6,7 +6,7 @@ import {AppDispatch} from "../store";
 // import {fetchCollection} from "./CollectionActionCreators";
 
 interface CardState {
-    clothes: ICollection[];
+    clothes: IClothes[];
     isLoading: boolean;
     error: string;
 }
@@ -24,7 +24,7 @@ export const collectionSlice = createSlice({
         collectionFetching(state) {
             state.isLoading = true;
         },
-        collectionFetchingSuccess(state, action: PayloadAction<ICollection[]>) {
+        collectionFetchingSuccess(state, action: PayloadAction<IClothes[]>) {
             state.isLoading = false;
             state.error = "";
             state.clothes = action.payload;
@@ -40,7 +40,7 @@ export const collectionSlice = createSlice({
 export const fetchCollection = () => async (dispatch: AppDispatch) => {
     try {
         dispatch(collectionSlice.actions.collectionFetching());
-        const response = await axios.get<ICollection[]>(
+        const response = await axios.get<IClothes[]>(
             `http://localhost:5000/clothes`
         );
         dispatch(collectionSlice.actions.collectionFetchingSuccess(response.data));

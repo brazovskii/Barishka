@@ -18,9 +18,10 @@ export const urlSlice = createSlice({
             state.urlHuman = action.payload
         },
         getUrParams(state, action: PayloadAction<string>) {
-            state.urlHuman = action.payload
+            state.urlParams = action.payload
         }
     },
 })
+export const {getUrlHuman, getUrParams} = urlSlice.actions;
 
 export default urlSlice.reducer;

@@ -1,16 +1,8 @@
+
 .card {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-
-  &__header {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5rem;
-
-  }
+  flex-direction: column;
+  margin-bottom: 5rem;
 
   &__body {
     position: relative;
@@ -19,6 +11,7 @@
     justify-content: center;
 
     &:hover .card__description {
+      text-align: center;
       opacity: 1;
       transition: 0.5s;
     }
@@ -39,8 +32,8 @@
   }
 
   &__picture {
-    max-width: 20rem;
-    max-height: 50rem;
+    max-width: 18rem;
+    max-height: 40rem;
     border-radius: 1rem;
 
 
@@ -86,6 +79,7 @@
   &__price {
     font-size: 1.5rem;
   }
+
 }
 
 
