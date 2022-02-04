@@ -6,6 +6,7 @@ import Home from "../components/Home/Home";
 import Search from "../components/Search/Search";
 import Basket from "../components/Basket/Basket";
 import ClothingCollection from "../components/ClothingCollection/ClothingCollection";
+import Clothe from "../components/Clothe/Clothe";
 
 export default function App() {
     return (
@@ -14,6 +15,7 @@ export default function App() {
                 <Route index element={<Home/>}/>
                 <Route path="girl" element={<ClothingCollection/>}/>
                 <Route path="man" element={<ClothingCollection/>}/>
+                <Route path=":paramsId" element={<Clothe/>}/>
                 <Route path="search" element={<Search/>}/>
                 <Route path="basket" element={<Basket/>}/>
                 <Route

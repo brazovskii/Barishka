@@ -8,11 +8,11 @@ import {useSearchParams} from "react-router-dom";
 import {IClothes} from "../../models/IClothes";
 
 const Home = () => {
-    const dispatch = useAppDispatch();
-    useEffect(() => {
-        dispatch(fetchCollection())
-    }, [])
-    const {clothes} = useAppSelector(state => state.collectionReducer)
+    // const dispatch = useAppDispatch();
+    // useEffect(() => {
+    //     dispatch(fetchCollection())
+    // }, [])
+    // const {clothes} = useAppSelector(state => state.collectionReducer)
 
     return (
         <>
