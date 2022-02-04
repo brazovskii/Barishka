@@ -15,7 +15,6 @@ export default function App() {
                 <Route index element={<Home/>}/>
                 <Route path="girl" element={<ClothingCollection/>}/>
                 <Route path="man" element={<ClothingCollection/>}/>
-                <Route path=":paramsId" element={<Clothe/>}/>
                 <Route path="search" element={<Search/>}/>
                 <Route path="basket" element={<Basket/>}/>
                 <Route
@@ -27,6 +26,7 @@ export default function App() {
                     }
                 />
             </Route>
+            <Route path=":paramsId" element={<Clothe/>}/>
         </Routes>
     );
 }

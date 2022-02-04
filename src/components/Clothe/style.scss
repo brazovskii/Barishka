@@ -1,0 +1,13 @@
+.picture {
+  &__body {
+    height: 100vh;
+    width: 40vw;
+  }
+}
+
+.recommendation {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 5rem;
+}

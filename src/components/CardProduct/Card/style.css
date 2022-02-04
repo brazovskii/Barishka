@@ -2,26 +2,22 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
+  max-width: max-content;
+}
+.card__link {
+  text-decoration: none;
 }
 .card__body {
-  position: relative;
+  margin: 0 2rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.card__body:hover .card__description {
-  text-align: center;
-  opacity: 1;
-  transition: 0.5s;
-}
-.card__body:hover .card__picture {
-  opacity: 0.2;
+.card__price {
+  color: black;
 }
 .card__description {
-  position: absolute;
   color: black;
-  font-size: 2rem;
-  opacity: 0;
+  font-size: 1.5rem;
 }
 .card__picture {
   max-width: 18rem;

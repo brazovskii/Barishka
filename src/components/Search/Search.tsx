@@ -22,6 +22,7 @@ const Search: FC = () => {
                             descriptions={invoice.descriptions}
                             img={invoice.img}
                             price={invoice.price}
+                            id={invoice.id}
                             key={invoice.id}
                         >
                             {invoice.name}

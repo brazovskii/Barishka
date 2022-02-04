@@ -6,7 +6,7 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138257/girl/hudi/RTLAAQ696601_15098303_1_v1_2x_asixed.jpg",
       "descriptions": "Худи adidas",
       "name": "girl",
-      "category": "Hudi"
+      "category": "hudi"
     },
     {
       "id": 21,
@@ -14,7 +14,7 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138257/girl/hudi/RTLAAY474401_16028265_1_v1_2x_awvitj.jpg",
       "descriptions": "Худи prada",
       "name": "girl",
-      "category": "Hudi"
+      "category": "hudi"
     },
     {
       "id": 22,
@@ -22,7 +22,7 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138256/girl/hudi/RTLAAO146701_14990373_1_v1_2x_tfrfno.jpg",
       "descriptions": "Худи nike",
       "name": "girl",
-      "category": "Hudi"
+      "category": "hudi"
     },
     {
       "id": 23,
@@ -30,7 +30,7 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138256/girl/hudi/NI464EWMQEW2_14065923_1_v1_2x_v43ey6.jpg",
       "descriptions": "Худи nike",
       "name": "girl",
-      "category": "Hudi"
+      "category": "hudi"
     },
     {
       "id": 24,
@@ -38,7 +38,7 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138256/girl/hudi/RTLAAO552801_14893593_1_v1_2x_ltbzbb.jpg",
       "descriptions": "Худи nike",
       "name": "girl",
-      "category": "Hudi"
+      "category": "hudi"
     },
     {
       "id": 25,
@@ -46,7 +46,7 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138256/girl/hudi/LE306EWLWQQ1_13176705_1_v1_2x_wqh5xk.jpg",
       "descriptions": "Худи nike",
       "name": "girl",
-      "category": "Hudi"
+      "category": "hudi"
     },
     {
       "id": 26,
@@ -54,7 +54,7 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138299/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/outerwear3_afucaq.jpg",
       "descriptions": "Куртка nike",
       "name": "girl",
-      "category": "Outerwear"
+      "category": "outerwear"
     },
     {
       "id": 27,
@@ -62,7 +62,7 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138299/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/outerwear4_mprqea.jpg",
       "descriptions": "Пальто D&G",
       "name": "girl",
-      "category": "Outerwear"
+      "category": "outerwear"
     },
     {
       "id": 28,
@@ -70,7 +70,7 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138298/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/outerwear5_pgitvw.jpg",
       "descriptions": "Куртка puma",
       "name": "girl",
-      "category": "Outerwear"
+      "category": "outerwear"
     },
     {
       "id": 29,
@@ -78,7 +78,7 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138298/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/outerwear1_yek5sh.jpg",
       "descriptions": "Куртка levi`s",
       "name": "gir",
-      "category": "Outerwear"
+      "category": "outerwear"
     },
     {
       "id": 210,
@@ -86,7 +86,7 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643924545/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/RTLAAV397801_15607476_1_v1_2x_npccyo.jpg",
       "descriptions": "Куртка nike",
       "name": "gir",
-      "category": "Outerwear"
+      "category": "outerwear"
     },
     {
       "id": 211,
@@ -207,8 +207,7 @@
       "descriptions": "Спортивный костюм adidas",
       "name": "girl",
       "category": "tracksuits"
-    }
-  ,
+    },
     {
       "id": 226,
       "price": 125.0,
@@ -256,8 +255,7 @@
       "descriptions": "Джинсы bershka",
       "name": "girl",
       "category": "jeans"
-    }
-  ,
+    },
     {
       "id": 241,
       "price": 22.0,
@@ -289,8 +287,7 @@
       "descriptions": "Майка adidas",
       "name": "girl",
       "category": "futbolki"
-    }
-  ,
+    },
     {
       "id": 245,
       "price": 25.0,

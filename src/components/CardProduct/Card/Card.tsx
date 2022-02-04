@@ -12,27 +12,18 @@ const Card: FC<ICard> = ({descriptions, img, price, id}) => {
         <>
             <div className={"card"}>
                 <NavLink to={`/${id}`} className={'card__link'}>
+                    <img
+                        className={"card__picture"}
+                        src={img}
+                        alt={"clothes"}
+                    />
                     <div className={"card__body"}>
                         <p className={"card__description"}>{descriptions}</p>
-                        <img
-                            className={"card__picture"}
-                            src={img}
-                            alt={"clothes"}
-                        />
+                        <p className={"card__price"}>{`${price}p`}</p>
                     </div>
                 </NavLink>
-                <div className={"card__section"}>
-                    <div className={"card__section"}>
-                        <button className={"card__btn--size"}>M</button>
-                        <button className={"card__btn--size"}>S</button>
-                        <button className={"card__btn--size"}>L</button>
-                        <button className={"card__btn--size"}>XL</button>
-                    </div>
-                    <p className={"card__price"}>{`${price}p`}</p>
-                </div>
-                <button className="card__button--btn">Купить</button>
             </div>
-            <Outlet/>
+            {/*<Outlet/>*/}
         </>
     );
 };

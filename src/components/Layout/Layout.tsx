@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import {Outlet, Link, useSearchParams} from "react-router-dom";
-import man from "../Man/Man";
+// import man from "../Man/Man";
 import {useAppDispatch} from "../../hooks/redux";
 import {getUrlHuman} from "../../store/reducers/UrlSlice";
 

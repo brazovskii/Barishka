@@ -3,39 +3,33 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
+  max-width: max-content;
+
+  &__link {
+    text-decoration: none;
+  }
 
   &__body {
-    position: relative;
+    margin: 0 2rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &:hover .card__description {
-      text-align: center;
-      opacity: 1;
-      transition: 0.5s;
-    }
-
-    &:hover .card__picture {
-      opacity: 0.2;
-    }
-
+    //align-items: center;
+    justify-content: space-between;
 
   }
 
-  &__description {
-    position: absolute;
+  &__price {
     color: black;
-    font-size: 2rem;
-    opacity: 0;
+  }
 
+  &__description {
+    color: black;
+    font-size: 1.5rem;
   }
 
   &__picture {
     max-width: 18rem;
     max-height: 40rem;
     border-radius: 1rem;
-
 
   }
 
