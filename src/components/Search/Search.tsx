@@ -21,6 +21,7 @@ const Search: FC = () => {
                     .map(invoice =>
                         <Card
                             descriptions={invoice.descriptions}
+                            category={invoice.category}
                             img={invoice.img}
                             price={invoice.price}
                             id={invoice.id}

@@ -1,17 +1,14 @@
 import React, {FC, useEffect} from "react";
 import "./style.scss";
 import {NavLink, Outlet} from "react-router-dom";
-import Filter from "../../Filter/Filter";
-import {useAppDispatch, useAppSelector} from "../../../hooks/redux";
-import {collectionSlice, fetchCollection} from "../../../store/reducers/CollectionSlice";
 import {ICard} from "../../../models/ICard";
 
 
-const Card: FC<ICard> = ({descriptions, img, price, id}) => {
+const Card: FC<ICard> = ({descriptions, category, img, price, id}) => {
     return (
         <>
             <div className={"card"}>
-                <NavLink to={`/${id}`} className={'card__link'}>
+                <NavLink to={`/${id}/${category}`} className={'card__link'}>
                     <div className={"card__body"}>
                         <img
                             className={"card__picture"}

@@ -1,11 +1,15 @@
 import {configureStore, combineReducers} from "@reduxjs/toolkit";
 import collectionReducer from './reducers/CollectionSlice'
 import urlReducer from './reducers/UrlSlice'
+import searchReducer from './reducers/SearchSlice'
+import basketReducer from './reducers/BasketSlice'
 import {clothesAPI} from "../services/ClothesService";
 
 const rootReducer = combineReducers({
     collectionReducer,
     urlReducer,
+    searchReducer,
+    basketReducer,
     [clothesAPI.reducerPath]: clothesAPI.reducer,
 });
 

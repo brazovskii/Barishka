@@ -8,18 +8,22 @@ import {useAppSelector} from "../../hooks/redux";
 
 const Clothe = () => {
     const sales = (val: number): number => val * 0.2 + val
+    const {value} = useAppSelector(state => state.searchReducer)
     const params = useParams();
     let idCard = Number(params.paramsId);
+    let itCategory = params.paramsName;
     const {data: clothes} = clothesAPI.useGetClothesQuery("clothes");
-    const {urlParams} = useAppSelector(state => state.urlReducer)
-    return <div className={''}>
+    const {urlParams} = useAppSelector(state => state.urlReducer);
+
+    return( <div className={''}>
         <div className={'picture'}> {clothes && clothes.map(invoice =>
             invoice.id === idCard ?
                 <div className={'picture__header'} key={invoice.id}>
-                    <div><img src={invoice.img} alt="" className={'picture__body'} key={invoice.id}/></div>
+                    <div><img src={invoice.img} alt={`${itCategory}`} className={'picture__body'} key={invoice.id}/>
+                    </div>
                     <div className={'params'}>
                         <div className={"picture__section"}>
-                            <p className={"picture__description"}>{`${invoice.descriptions}p`}</p>
+                            <p className={"picture__description"}>{`${invoice.descriptions}`}</p>
                             <div className={'picture__check'}>
                                 <span className={"picture__price"}>{`${invoice.price}PUБ`}</span>
                                 <span
@@ -39,9 +43,10 @@ const Clothe = () => {
         </div>
         <p className={'recommendation'}>Рекомендации для вас</p>
         <div className={"main__body"}>
-            {clothes && clothes.map(invoice => invoice.category === urlParams ?
+            {clothes && clothes.map(invoice => invoice.category ===  itCategory ?
                 <Card
                     descriptions={invoice.descriptions}
+                    category={invoice.category}
                     img={invoice.img}
                     price={invoice.price}
                     id={invoice.id}
@@ -50,7 +55,7 @@ const Clothe = () => {
                     {invoice.name}
                 </Card> : '')}
         </div>
-    </div>
+    </div>)
 
 };
 

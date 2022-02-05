@@ -12,7 +12,7 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Layout/>}>
                 <Route index element={<Home/>}/>
-                <Route path="girl" element={<ClothingCollection/>}/>
+                <Route path='girl' element={<ClothingCollection/>}/>
                 <Route path="man" element={<ClothingCollection/>}/>
                 <Route path="search" element={<Search/>}/>
                 <Route path="basket" element={<Basket/>}/>
@@ -25,7 +25,7 @@ export default function App() {
                     }
                 />
             </Route>
-            <Route path=":paramsId" element={<Clothe/>}/>
+            <Route path=":paramsId/:paramsName" element={<Clothe/>}/>
         </Routes>
     );
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import Filter from "../Filter/Filter";
 import Card from "../CardProduct/Card/Card";
 import {useAppSelector} from "../../hooks/redux";
@@ -8,10 +7,9 @@ import {clothesAPI} from "../../services/ClothesService";
 
 
 const ClothingCollection = () => {
-    // const {clothes} = useAppSelector(state => state.collectionReducer)
     const {urlHuman} = useAppSelector(state => state.urlReducer)
     const {data: clothes, isLoading} = clothesAPI.useGetClothesQuery("clothes");
-    let [searchParams, setSearchParams] = useSearchParams();
+    let [searchParams] = useSearchParams();
     return (
         <>
             <Filter/>
@@ -31,6 +29,7 @@ const ClothingCollection = () => {
                         invoice.name === urlHuman ?
                             <Card
                                 descriptions={invoice.descriptions}
+                                category={invoice.category}
                                 img={invoice.img}
                                 price={invoice.price}
                                 id={invoice.id}

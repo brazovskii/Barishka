@@ -336,5 +336,15 @@
       "name": "girl",
       "category": "futbolki"
     }
+  ],
+  "sale": [
+    {
+      "id": 251,
+      "price": 129.0,
+      "img": "https://a.lmcdn.ru/img600x866/R/T/RTLAAZ654101_16058297_1_v2.jpg",
+      "descriptions": "очки",
+      "name": "girl",
+      "category": "glass"
+    }
   ]
 }
