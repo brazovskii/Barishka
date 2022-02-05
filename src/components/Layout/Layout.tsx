@@ -5,43 +5,30 @@ import {Outlet, Link, useSearchParams} from "react-router-dom";
 import {useAppDispatch} from "../../hooks/redux";
 import {getUrlHuman} from "../../store/reducers/UrlSlice";
 
-const Layout= () => {
-    let [searchParams, setSearchParams] = useSearchParams();
+const Layout = () => {
+
     const dispatch = useAppDispatch()
 
     return (
-        <div className={"head"}>
+        <div className={"king"}>
             <nav className="nav">
-                <Link to={"/"} className={"btnHeader"}>
-                    {"Barishka"}
-                </Link>
-                <Link to={`girl`} className={"btnHeader"} onClick={() => {
+                <div className={'nav__body'}>
+                    <Link to={`girl`} className={"btnHeader__human"} onClick={() => {
                     dispatch(getUrlHuman('girl'))
                 }}
                 >
-                    {"Girl"}
+                    {"Женжинам"}
                 </Link>
-                <Link to={`man`} className={"btnHeader"} onClick={() => {
-                    dispatch(getUrlHuman('man'))
-                }}>
-                    {"Man"}
+                    <Link to={`man`} className={"btnHeader__human"} onClick={() => {
+                        dispatch(getUrlHuman('man'))
+                    }}>
+                        {"Мужчинам"}
+                    </Link></div>
+                <Link to={"/"} className={"btnHeader__barishka"}>
+                    {"Barishka        "}
                 </Link>
-                <Link to={`search`} className={"btnHeader"}>
-                    <input
-                        className="inputSearch"
-                        placeholder=" Search..."
-                        value={searchParams.get('description') || ''}
-                        onChange={event => {
-                            let description = event.target.value;
-                            if (description) {
-                                setSearchParams({description});
-                            } else {
-                                setSearchParams({})
-                            }
-                        }}
-                    />
-                </Link>
-                <Link to={`/basket`} className={"btnHeader"}>
+
+                <Link to={`/basket`} className={"btnHeader__basket"}>
                     {"Basket"}
                 </Link>
             </nav>

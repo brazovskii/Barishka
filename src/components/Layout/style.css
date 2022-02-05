@@ -1,39 +1,37 @@
-.btnHeader {
-  border: none;
-  color: white;
-  padding: 1.5rem 3rem;
-  text-align: center;
-  text-decoration: none;
-  font-size: 2rem;
-}
-.btnHeader:hover {
-  background-color: lightgray;
-  color: black;
-}
-
-.head {
-  margin: 0 0rem;
-}
-
-.inputSearch {
-  border: none;
-  outline: none;
-  max-width: 15rem;
-  height: 3rem;
-  border-radius: 1rem;
-  font-size: 2rem;
+.king {
+  margin: 0 10rem;
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: black;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
-.qwe {
-  z-index: 1;
-  color: red;
+.btnHeader {
+  border: none;
+  color: black;
+}
+.btnHeader__human {
+  color: black;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.btnHeader__barishka {
+  color: black;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  font-size: 3.2rem;
+  margin-right: 10rem;
+}
+.btnHeader__basket {
+  color: black;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

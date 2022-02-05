@@ -6,7 +6,7 @@ interface UrlState {
 }
 
 const initialState: UrlState = {
-    urlHuman: '',
+    urlHuman: 'girl',
     urlParams: ''
 }
 

@@ -1,28 +1,46 @@
 .card {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5rem;
-  max-width: max-content;
+  position: relative;
 }
 .card__link {
   text-decoration: none;
 }
 .card__body {
-  margin: 0 2rem;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+}
+.card__body:hover .card__description {
+  opacity: 1;
+  transition: 1.5s;
+}
+.card__body:hover .card__price {
+  opacity: 1;
+  transition: 1.5s;
 }
 .card__price {
-  color: black;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 1rem;
+  color: red;
+  margin: 1rem;
+  opacity: 0;
 }
 .card__description {
+  position: absolute;
+  top: 1rem;
+  margin: 1rem;
   color: black;
   font-size: 1.5rem;
+  text-transform: capitalize;
+  opacity: 0;
 }
 .card__picture {
   max-width: 18rem;
   max-height: 40rem;
   border-radius: 1rem;
+}
+.card__picture:hover {
+  opacity: 0.3;
 }
 .card__section {
   display: flex;
@@ -54,9 +72,6 @@
 .card__button--btn:active {
   background-color: white;
   color: black;
-}
-.card__price {
-  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

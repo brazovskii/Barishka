@@ -1,9 +1,9 @@
 import React, {FC} from "react";
 import "./style.scss";
-import {Link, NavLink, Outlet} from "react-router-dom";
+import {Link, NavLink, Outlet, useSearchParams} from "react-router-dom";
 import {ILink, IUrl} from "../../models/ILink";
 import {useAppDispatch, useAppSelector} from "../../hooks/redux";
-import {getUrParams} from "../../store/reducers/UrlSlice";
+import {getUrlHuman, getUrParams} from "../../store/reducers/UrlSlice";
 
 const MASSLINK: ILink[] = [
     {id: 100, url: "outerwear", name: "Верхняя одежда"},
@@ -18,9 +18,11 @@ const MASSLINK: ILink[] = [
 const Filter = () => {
     const dispatch = useAppDispatch()
     const {urlHuman} = useAppSelector(state => state.urlReducer)
+    let [searchParams, setSearchParams] = useSearchParams();
+
     return (
-        <>
-            <div className="filter">
+        <div className={'filter'}>
+            <div className="filter__body">
                 {MASSLINK.map((el) => {
                     return (
                         <NavLink to={`?category=${el.url}`} key={el.id} className={'filter__link'}
@@ -32,8 +34,23 @@ const Filter = () => {
                     );
                 })}
             </div>
+            <NavLink to={`?description=adidas`} ><input
+                className="inputSearch"
+                placeholder=" Search..."
+                value={searchParams.get('description') || ''}
+                onChange={event => {
+                    dispatch(getUrlHuman('search'))
+                    let description = event.target.value;
+                    if (description) {
+                        setSearchParams({description});
+                    } else {
+                        setSearchParams({})
+                    }
+                }}
+            /></NavLink>
+
             <Outlet/>
-        </>
+        </div>
     );
 };
 

@@ -12,14 +12,14 @@ const Card: FC<ICard> = ({descriptions, img, price, id}) => {
         <>
             <div className={"card"}>
                 <NavLink to={`/${id}`} className={'card__link'}>
-                    <img
-                        className={"card__picture"}
-                        src={img}
-                        alt={"clothes"}
-                    />
                     <div className={"card__body"}>
+                        <img
+                            className={"card__picture"}
+                            src={img}
+                            alt={"clothes"}
+                        />
                         <p className={"card__description"}>{descriptions}</p>
-                        <p className={"card__price"}>{`${price}p`}</p>
+                        <p className={"card__price"}>{`${price}РУБ`}</p>
                     </div>
                 </NavLink>
             </div>

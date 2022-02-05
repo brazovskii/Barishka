@@ -2,6 +2,48 @@
   height: 100vh;
   width: 40vw;
 }
+.picture__header {
+  display: flex;
+}
+.picture__description {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+.picture__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+.picture__price {
+  color: red;
+  font-size: 1.5rem;
+}
+.picture__check {
+  padding: 3rem;
+}
+.picture__sale {
+  color: lightslategray;
+  text-decoration: line-through;
+}
+.picture__section--btn {
+  display: flex;
+  align-items: center;
+}
+
+.sale {
+  color: red;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.params {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;
+}
 
 .recommendation {
   display: flex;

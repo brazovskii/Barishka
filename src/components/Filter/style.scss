@@ -1,21 +1,33 @@
+
 .filter {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 0.5rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+
+  &__body {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
 
   &__link {
     color: black;
     padding: 0.5rem 0.5rem;
     text-align: center;
     font-size: 1.2rem;
-    border-radius: 3rem;
     text-decoration: none;
-
-    &:focus {
-      border-radius: 0;
-      border-bottom: 0.1rem solid black;
-    }
   }
+
+  .inputSearch {
+    font-size: 1.5rem;
+    border: 1px solid black;
+
+  }
+
 }
+
 

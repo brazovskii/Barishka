@@ -2,17 +2,16 @@ import React from "react";
 import Filter from "../Filter/Filter";
 import Card from "../CardProduct/Card/Card";
 import {useAppSelector} from "../../hooks/redux";
-import {useSearchParams} from "react-router-dom";
+import {Link, useSearchParams} from "react-router-dom";
 import "./style.scss";
 import {clothesAPI} from "../../services/ClothesService";
 
 
 const ClothingCollection = () => {
     // const {clothes} = useAppSelector(state => state.collectionReducer)
-    let [searchParams] = useSearchParams();
     const {urlHuman} = useAppSelector(state => state.urlReducer)
     const {data: clothes, isLoading} = clothesAPI.useGetClothesQuery("clothes");
-
+    let [searchParams, setSearchParams] = useSearchParams();
     return (
         <>
             <Filter/>
@@ -21,10 +20,12 @@ const ClothingCollection = () => {
                     src="https://miro.medium.com/max/2400/1*5ngZiNtGMrp_xmZHxSvJ0g.gif" alt="loader"/></div>}
                 {clothes && clothes
                     .filter(clothe => {
+                        let filterDescription = searchParams.get("description") ?? '';
                         let filterCategory = searchParams.get("category") ?? '';
-                        if (!filterCategory) return true;
+                        if (!filterCategory && !filterDescription) return true;
+                        let description = clothe.descriptions.toLowerCase();
                         let category = clothe.category.toLowerCase();
-                        return category.toLowerCase().includes(filterCategory.toLowerCase());
+                        return category.toLowerCase().includes(filterCategory.toLowerCase()) && description.toLowerCase().includes(filterDescription.toLowerCase());
                     })
                     .map(invoice =>
                         invoice.name === urlHuman ?
