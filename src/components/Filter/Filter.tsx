@@ -18,9 +18,9 @@ const MASSLINK: ILink[] = [
 
 const Filter = () => {
     const dispatch = useAppDispatch()
-    const {urlHuman} = useAppSelector(state => state.urlReducer)
+    const {urlHuman} = useAppSelector(state => state.url)
     let [searchParams, setSearchParams] = useSearchParams();
-    const {value} = useAppSelector(state => state.searchReducer)
+    const {value} = useAppSelector(state => state.search)
     return (
         <div className={'filter'}>
             <div className="filter__body">

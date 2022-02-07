@@ -6,7 +6,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138257/girl/hudi/RTLAAQ696601_15098303_1_v1_2x_asixed.jpg",
       "descriptions": "Худи adidas",
       "name": "girl",
-      "category": "hudi"
+      "category": "hudi",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 21,
@@ -14,7 +20,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138257/girl/hudi/RTLAAY474401_16028265_1_v1_2x_awvitj.jpg",
       "descriptions": "Худи prada",
       "name": "girl",
-      "category": "hudi"
+      "category": "hudi",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 22,
@@ -22,7 +34,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138256/girl/hudi/RTLAAO146701_14990373_1_v1_2x_tfrfno.jpg",
       "descriptions": "Худи nike",
       "name": "girl",
-      "category": "hudi"
+      "category": "hudi",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 23,
@@ -30,7 +48,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138256/girl/hudi/NI464EWMQEW2_14065923_1_v1_2x_v43ey6.jpg",
       "descriptions": "Худи nike",
       "name": "girl",
-      "category": "hudi"
+      "category": "hudi",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 24,
@@ -38,7 +62,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138256/girl/hudi/RTLAAO552801_14893593_1_v1_2x_ltbzbb.jpg",
       "descriptions": "Худи nike",
       "name": "girl",
-      "category": "hudi"
+      "category": "hudi",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 25,
@@ -46,7 +76,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138256/girl/hudi/LE306EWLWQQ1_13176705_1_v1_2x_wqh5xk.jpg",
       "descriptions": "Худи nike",
       "name": "girl",
-      "category": "hudi"
+      "category": "hudi",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 26,
@@ -54,7 +90,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138299/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/outerwear3_afucaq.jpg",
       "descriptions": "Куртка nike",
       "name": "girl",
-      "category": "outerwear"
+      "category": "outerwear",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 27,
@@ -62,7 +104,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138299/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/outerwear4_mprqea.jpg",
       "descriptions": "Пальто D&G",
       "name": "girl",
-      "category": "outerwear"
+      "category": "outerwear",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 28,
@@ -70,7 +118,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138298/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/outerwear5_pgitvw.jpg",
       "descriptions": "Куртка puma",
       "name": "girl",
-      "category": "outerwear"
+      "category": "outerwear",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 29,
@@ -78,7 +132,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138298/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/outerwear1_yek5sh.jpg",
       "descriptions": "Куртка levi`s",
       "name": "gir",
-      "category": "outerwear"
+      "category": "outerwear",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 210,
@@ -86,7 +146,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643924545/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/RTLAAV397801_15607476_1_v1_2x_npccyo.jpg",
       "descriptions": "Куртка nike",
       "name": "gir",
-      "category": "outerwear"
+      "category": "outerwear",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 211,
@@ -94,7 +160,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138298/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/outerwear2_s9id9e.jpg",
       "descriptions": "Куртка levi`s",
       "name": "girl",
-      "category": "outerwear"
+      "category": "outerwear",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 212,
@@ -102,7 +174,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138299/girl/%D0%BE%D0%B1%D1%83%D0%B2%D1%8C/sneakers5_uuzigu.jpg",
       "descriptions": "Кроссовки adidas",
       "name": "girl",
-      "category": "shoes"
+      "category": "shoes",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 213,
@@ -110,7 +188,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138299/girl/%D0%BE%D0%B1%D1%83%D0%B2%D1%8C/sneakers3_nwy16y.jpg",
       "descriptions": "Кроссовки adidas",
       "name": "girl",
-      "category": "shoes"
+      "category": "shoes",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 214,
@@ -118,7 +202,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138299/girl/%D0%BE%D0%B1%D1%83%D0%B2%D1%8C/sneakers4_o1k9ad.jpg",
       "descriptions": "Кроссовки nike",
       "name": "girl",
-      "category": "shoes"
+      "category": "shoes",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 215,
@@ -126,7 +216,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138299/girl/%D0%BE%D0%B1%D1%83%D0%B2%D1%8C/sneakers2_hdg2gg.jpg",
       "descriptions": "Кроссовки nike",
       "name": "girl",
-      "category": "shoes"
+      "category": "shoes",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 216,
@@ -134,7 +230,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138298/girl/%D0%BE%D0%B1%D1%83%D0%B2%D1%8C/sneakers1_vdir1f.jpg",
       "descriptions": "Кроссовки nike",
       "name": "girl",
-      "category": "shoes"
+      "category": "shoes",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 217,
@@ -142,7 +244,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138298/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/outerwear1_yek5sh.jpg",
       "descriptions": "Куртка nike",
       "name": "girl",
-      "category": "outerwear"
+      "category": "outerwear",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 218,
@@ -150,7 +258,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643924545/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/RTLAAV397801_15607476_1_v1_2x_npccyo.jpg",
       "descriptions": "Куртка nike",
       "name": "girl",
-      "category": "outerwear"
+      "category": "outerwear",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 219,
@@ -158,7 +272,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923792/girl/%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLAAP963301_15028593_1_v1_2x_b7wguj.jpg",
       "descriptions": "Спортивный костюм adidas",
       "name": "girl",
-      "category": "tracksuits"
+      "category": "tracksuits",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 220,
@@ -166,7 +286,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923779/girl/%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLAAW183701_15693248_1_v1_2x_kvsfcp.jpg",
       "descriptions": "Спортивный костюм adidas",
       "name": "girl",
-      "category": "tracksuits"
+      "category": "tracksuits",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 221,
@@ -174,7 +300,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923770/girl/%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%88%D1%82%D0%B0%D0%BD%D1%8B/SI029EWMDWP9_13042194_1_v1_2x_potv8g.jpg",
       "descriptions": "Спортивный костюм nike",
       "name": "girl",
-      "category": "tracksuits"
+      "category": "tracksuits",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 222,
@@ -182,7 +314,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923751/girl/%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLAAP963201_15028974_1_v1_2x_zwbmxe.jpg",
       "descriptions": "Спортивный костюм nike",
       "name": "girl",
-      "category": "tracksuits"
+      "category": "tracksuits",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 223,
@@ -190,7 +328,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923742/girl/%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLAAO471801_14882406_1_v1_2x_z8xysu.jpg",
       "descriptions": "Спортивный костюм adidas",
       "name": "girl",
-      "category": "tracksuits"
+      "category": "tracksuits",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 224,
@@ -198,7 +342,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923733/girl/%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLAAS703201_15345383_1_v1_2x_bjhk8a.jpg",
       "descriptions": "Спортивный костюм adidas",
       "name": "girl",
-      "category": "tracksuits"
+      "category": "tracksuits",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 225,
@@ -206,7 +356,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923762/girl/%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLAAL373901_14561696_1_v1_2x_kmyba3.jpg",
       "descriptions": "Спортивный костюм adidas",
       "name": "girl",
-      "category": "tracksuits"
+      "category": "tracksuits",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 226,
@@ -214,7 +370,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643924106/girl/%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLAAY342501_15920944_1_v1_2x_lzytkm.jpg",
       "descriptions": "Джинсы zara",
       "name": "girl",
-      "category": "jeans"
+      "category": "jeans",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 227,
@@ -222,7 +384,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643924086/girl/%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLAAR257701_15299840_1_v1_2x_caciyr.jpg",
       "descriptions": "Джинсы pull&bear",
       "name": "girl",
-      "category": "jeans"
+      "category": "jeans",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 228,
@@ -230,7 +398,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643924066/girl/%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLAAR779101_15153616_1_v1_b5ziu6.jpg",
       "descriptions": "Джинсы zara",
       "name": "girl",
-      "category": "jeans"
+      "category": "jeans",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 229,
@@ -238,7 +412,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923962/girl/%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLABB343801_16215011_1_v1_azip3x.jpg",
       "descriptions": "Джинсы pull&bear",
       "name": "girl",
-      "category": "jeans"
+      "category": "jeans",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 230,
@@ -246,7 +426,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923949/girl/%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLABC525101_16354520_1_v1_2x_uzt2rf.jpg",
       "descriptions": "Джинсы bershka",
       "name": "girl",
-      "category": "jeans"
+      "category": "jeans",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 240,
@@ -254,7 +440,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923925/girl/%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLAAG023601_13917301_1_v1_sf90rq.jpg",
       "descriptions": "Джинсы bershka",
       "name": "girl",
-      "category": "jeans"
+      "category": "jeans",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 241,
@@ -262,7 +454,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138303/girl/%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B8/futbolka9_rdgnhy.jpg",
       "descriptions": "Майка nike",
       "name": "girl",
-      "category": "futbolki"
+      "category": "futbolki",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 242,
@@ -270,7 +468,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138303/girl/%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B8/futbolka8_pdjnxe.jpg",
       "descriptions": "Майка adidas",
       "name": "girl",
-      "category": "futbolki"
+      "category": "futbolki",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 243,
@@ -278,7 +482,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138302/girl/%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B8/futbolka7_o6koon.jpg",
       "descriptions": "Майка adidas",
       "name": "girl",
-      "category": "futbolki"
+      "category": "futbolki",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 244,
@@ -286,7 +496,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138302/girl/%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B8/futbolka5_dis7c0.jpg",
       "descriptions": "Майка adidas",
       "name": "girl",
-      "category": "futbolki"
+      "category": "futbolki",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 245,
@@ -294,7 +510,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138301/girl/%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B8/futbolka6_lqty58.jpg",
       "descriptions": "Майка zara",
       "name": "girl",
-      "category": "futbolki"
+      "category": "futbolki",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 246,
@@ -302,7 +524,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138301/girl/%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B8/futbolka4_eoalqj.jpg",
       "descriptions": "Майка pull&bear",
       "name": "girl",
-      "category": "futbolki"
+      "category": "futbolki",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 247,
@@ -310,7 +538,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138301/girl/%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B8/futbolka10_fkg3km.jpg",
       "descriptions": "Майка zara",
       "name": "girl",
-      "category": "futbolki"
+      "category": "futbolki",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 248,
@@ -318,7 +552,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138301/girl/%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B8/futbolka2_heq21c.jpg",
       "descriptions": "Майка pull&bear",
       "name": "girl",
-      "category": "futbolki"
+      "category": "futbolki",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 249,
@@ -326,7 +566,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138300/girl/%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B8/futbolka3_jj9sjl.jpg",
       "descriptions": "Майка bershka",
       "name": "girl",
-      "category": "futbolki"
+      "category": "futbolki",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     {
       "id": 250,
@@ -334,7 +580,13 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138300/girl/%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D0%BA%D0%B8/futbolka1_x35mke.jpg",
       "descriptions": "Майка bershka",
       "name": "girl",
-      "category": "futbolki"
+      "category": "futbolki",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     }
   ],
   "sale": [
@@ -344,7 +596,13 @@
       "img": "https://a.lmcdn.ru/img600x866/R/T/RTLAAZ654101_16058297_1_v2.jpg",
       "descriptions": "очки",
       "name": "girl",
-      "category": "glass"
+      "category": "glass",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     }
   ]
 }

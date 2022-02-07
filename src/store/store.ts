@@ -1,15 +1,15 @@
-import {configureStore, combineReducers} from "@reduxjs/toolkit";
+import {combineReducers, configureStore} from "@reduxjs/toolkit";
 import collectionReducer from './reducers/CollectionSlice'
 import urlReducer from './reducers/UrlSlice'
 import searchReducer from './reducers/SearchSlice'
-import basketReducer from './reducers/BasketSlice'
+import basketReducer from './reducers/BasketListSlice'
 import {clothesAPI} from "../services/ClothesService";
 
 const rootReducer = combineReducers({
-    collectionReducer,
-    urlReducer,
-    searchReducer,
-    basketReducer,
+    collection: collectionReducer,
+    url: urlReducer,
+    search: searchReducer,
+    basketList: basketReducer,
     [clothesAPI.reducerPath]: clothesAPI.reducer,
 });
 

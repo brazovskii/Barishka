@@ -1,57 +1,59 @@
 .picture {
+  display: flex;
   &__body {
     height: 100vh;
     width: 40vw;
   }
-  &__header{
+
+  &__header {
     display: flex;
   }
-  &__description{
+
+  &__description {
     font-size: 2.5rem;
     text-transform: capitalize;
   }
-  &__section{
+
+  &__section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3rem;
   }
-  &__price{
-    color:red;
+
+  &__price {
+    color: red;
     font-size: 1.5rem;
   }
-  &__check{
+
+  &__check {
     padding: 3rem;
   }
-  &__sale{
-    color:lightslategray;
+
+  &__sale {
+    color: lightslategray;
     text-decoration: line-through;
   }
-  &__section--btn{
+
+  &__section--btn {
     display: flex;
     align-items: center;
   }
 
 }
 
-.sale{
-  color:red;
+.sale {
+  color: red;
   font-size: 1.5rem;
   margin-left: 1rem
 }
 
-.params{
+.params {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   width: 50vw;
-}
-
-
-.card__section{
-  //display: flex;
-  //align-items: center;
 }
 
 .recommendation {

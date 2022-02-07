@@ -4,10 +4,10 @@ import {useAppSelector} from "../../hooks/redux";
 import {Link, useSearchParams} from "react-router-dom";
 import "./style.scss";
 import {clothesAPI} from "../../services/ClothesService";
-
+import React from "react";
 
 const ClothingCollection = () => {
-    const {urlHuman} = useAppSelector(state => state.urlReducer)
+    const {urlHuman} = useAppSelector(state => state.url)
     const {data: clothes, isLoading} = clothesAPI.useGetClothesQuery("clothes");
     let [searchParams] = useSearchParams();
     return (

@@ -1,21 +1,22 @@
-import React, {FC} from "react";
+import React from "react";
 import {useParams} from "react-router-dom";
 import {clothesAPI} from "../../services/ClothesService";
 import Card from "../CardProduct/Card/Card";
 import './style.scss'
-import {useAppSelector} from "../../hooks/redux";
+import {useAppDispatch, useAppSelector} from "../../hooks/redux";
+import {getBasket, getSizeBasket} from "../../store/reducers/BasketListSlice";
 
 
 const Clothe = () => {
+    const keyBasket = +new Date()
+    const dispatch = useAppDispatch()
     const sales = (val: number): number => val * 0.2 + val
-    const {value} = useAppSelector(state => state.searchReducer)
     const params = useParams();
-    let idCard = Number(params.paramsId);
+    const idCard = Number(params.paramsId);
     let itCategory = params.paramsName;
     const {data: clothes} = clothesAPI.useGetClothesQuery("clothes");
-    const {urlParams} = useAppSelector(state => state.urlReducer);
-
-    return( <div className={''}>
+    const {size} = useAppSelector(state => state.basketList);
+    return (<div className={''}>
         <div className={'picture'}> {clothes && clothes.map(invoice =>
             invoice.id === idCard ?
                 <div className={'picture__header'} key={invoice.id}>
@@ -29,21 +30,25 @@ const Clothe = () => {
                                 <span
                                     className={'picture__sale'}>{`.${sales(invoice.price)}РУБ  `}</span>
                                 <span className={'sale'}>{`-20%`}</span></div>
-
-                            <div className={"picture__section--btn"}>
-                                <button className={"card__btn--size"}>M</button>
-                                <button className={"card__btn--size"}>S</button>
-                                <button className={"card__btn--size"}>L</button>
-                                <button className={"card__btn--size"}>XL</button>
+                            <div className={"picture__section--btn"}>{invoice.size.map(sizeClothe => {
+                                return (<button className={"card__btn--size"} key={sizeClothe}
+                                                onClick={() => dispatch(getSizeBasket(sizeClothe))}>{sizeClothe}</button>)
+                            })}
                             </div>
                         </div>
-                        <button className="card__button--btn">Добавить в корзину</button>
+                        <button className="card__button--btn" onClick={() => dispatch(getBasket({
+                            id: invoice.id,
+                            keyId: keyBasket,
+                            size: [size]
+                        }))}>Добавить в
+                            корзину
+                        </button>
                     </div>
                 </div> : '')}
         </div>
         <p className={'recommendation'}>Рекомендации для вас</p>
         <div className={"main__body"}>
-            {clothes && clothes.map(invoice => invoice.category ===  itCategory ?
+            {clothes && clothes.map(invoice => invoice.category === itCategory ?
                 <Card
                     descriptions={invoice.descriptions}
                     category={invoice.category}
