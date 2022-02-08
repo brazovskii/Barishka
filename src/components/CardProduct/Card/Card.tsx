@@ -1,6 +1,6 @@
-import React, {FC, useEffect} from "react";
+import React, {FC} from "react";
 import "./style.scss";
-import {NavLink, Outlet} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {ICard} from "../../../models/ICard";
 
 
@@ -20,7 +20,6 @@ const Card: FC<ICard> = ({descriptions, category, img, price, id}) => {
                     </div>
                 </NavLink>
             </div>
-            {/*<Outlet/>*/}
         </>
     );
 };

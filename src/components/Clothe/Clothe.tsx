@@ -4,7 +4,7 @@ import {clothesAPI} from "../../services/ClothesService";
 import Card from "../CardProduct/Card/Card";
 import './style.scss'
 import {useAppDispatch, useAppSelector} from "../../hooks/redux";
-import {getBasket, getSizeBasket} from "../../store/reducers/BasketListSlice";
+import {getBasket, getBasketTotal, getSizeBasket} from "../../store/reducers/BasketListSlice";
 
 
 const Clothe = () => {
@@ -16,6 +16,15 @@ const Clothe = () => {
     let itCategory = params.paramsName;
     const {data: clothes} = clothesAPI.useGetClothesQuery("clothes");
     const {size} = useAppSelector(state => state.basketList);
+    const onHandledClick = (id: number, keyBasket: number, size: string, price: number) => {
+        dispatch(getBasket({
+            id: id,
+            keyId: keyBasket,
+            size: [size]
+        }))
+        dispatch(getBasketTotal(price))
+    }
+
     return (<div className={''}>
         <div className={'picture'}> {clothes && clothes.map(invoice =>
             invoice.id === idCard ?
@@ -36,11 +45,8 @@ const Clothe = () => {
                             })}
                             </div>
                         </div>
-                        <button className="card__button--btn" onClick={() => dispatch(getBasket({
-                            id: invoice.id,
-                            keyId: keyBasket,
-                            size: [size]
-                        }))}>Добавить в
+                        <button className="card__button--btn"
+                                onClick={() => onHandledClick(invoice.id, keyBasket, size, invoice.price)}>Добавить в
                             корзину
                         </button>
                     </div>

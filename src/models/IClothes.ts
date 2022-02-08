@@ -6,7 +6,7 @@ export interface IClothes {
     name: string;
     category: string;
     size: string[];
-    keyId: string | number;
+    keyId: string | number | undefined;
 }
 
 export interface ICardBasket {
@@ -15,5 +15,5 @@ export interface ICardBasket {
     img: string;
     descriptions: string;
     sizes: number | string | string[] | undefined;
-    keyId: string | number;
+    keyId?: string | number | undefined;
 }

@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import "./style.scss";
-import {Outlet, Link, useSearchParams} from "react-router-dom";
-// import man from "../Man/Man";
+import {Link, Outlet} from "react-router-dom";
 import {useAppDispatch} from "../../hooks/redux";
 import {getUrlHuman} from "../../store/reducers/UrlSlice";
 import BasketMadal from "../Basket/BasketMadol/BasketMadal";
@@ -31,10 +30,7 @@ const Layout = () => {
                     {"Barishka"}
                 </span>
                 <button onClick={() => setModalActive(true)}>Nodal</button>
-                <BasketMadal active={modalActive} setActive={setModalActive}><Basket></Basket></BasketMadal>
-                {/*<Link to={`/basket`} className={"btnHeader__basket"}>*/}
-                {/*    {<i className="fas fa-shopping-basket"></i>}*/}
-                {/*</Link>*/}
+                <BasketMadal active={modalActive} setActive={setModalActive}><Basket/></BasketMadal>
             </nav>
             <Outlet/>
         </div>

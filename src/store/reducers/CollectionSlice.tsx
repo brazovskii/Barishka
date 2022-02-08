@@ -3,7 +3,6 @@ import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import axios from "axios";
 import {AppDispatch} from "../store";
 
-// import {fetchCollection} from "./CollectionActionCreators";
 
 interface CardState {
     clothes: IClothes[];

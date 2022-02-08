@@ -1,9 +1,9 @@
-import React, {FC} from "react";
+import React from "react";
 import "./style.scss";
-import {Link, NavLink, Outlet, useSearchParams} from "react-router-dom";
-import {ILink, IUrl} from "../../models/ILink";
+import {NavLink, Outlet, useSearchParams} from "react-router-dom";
+import {ILink} from "../../models/ILink";
 import {useAppDispatch, useAppSelector} from "../../hooks/redux";
-import {getUrlHuman, getUrParams} from "../../store/reducers/UrlSlice";
+import {getUrParams} from "../../store/reducers/UrlSlice";
 import {getSearchValue} from "../../store/reducers/SearchSlice";
 
 const MASSLINK: ILink[] = [
@@ -18,7 +18,6 @@ const MASSLINK: ILink[] = [
 
 const Filter = () => {
     const dispatch = useAppDispatch()
-    const {urlHuman} = useAppSelector(state => state.url)
     let [searchParams, setSearchParams] = useSearchParams();
     const {value} = useAppSelector(state => state.search)
     return (

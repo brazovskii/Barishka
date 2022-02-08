@@ -1,21 +1,12 @@
-import {createSlice, Draft, PayloadAction} from "@reduxjs/toolkit";
-import {IBasket} from "../../models/IBasket";
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {BasketState, IBasket} from "../../models/IBasket";
 
-
-interface BasketState {
-    basket: IBasket[];
-    id: number | string;
-    keyId: number | string | undefined | Date;
-    size: string;
-    count: number;
-    total: number;
-}
 
 const initialState: BasketState = {
     basket: [],
-    keyId: '',
+    keyId: 0,
     id: '',
-    size: '',
+    size: 'S',
     count: 0,
     total: 0
 }
@@ -26,6 +17,7 @@ export const basketListSlice = createSlice({
     reducers: {
         getBasket(state, action: PayloadAction<IBasket>) {
             state.basket = [action.payload, ...state.basket]
+
         },
         getIdBasket(state, action: PayloadAction<number | string>) {
             state.id = action.payload
@@ -36,12 +28,24 @@ export const basketListSlice = createSlice({
         getBasketCount(state) {
             state.count = state.basket.length
         },
-        getBasketDelete(state) {
+        getBasketDelete(state, action: PayloadAction<IBasket | string | number | undefined>) {
+            state.basket = state.basket.filter(el => el.keyId !== action.payload)
+            state.count = state.count - 1
 
+        },
+        getBasketTotal(state, action: PayloadAction<number>) {
+            state.total += action.payload
         }
     },
 })
-export const {getBasket, getIdBasket, getSizeBasket, getBasketCount, getBasketDelete} = basketListSlice.actions;
+export const {
+    getBasket,
+    getIdBasket,
+    getSizeBasket,
+    getBasketCount,
+    getBasketDelete,
+    getBasketTotal
+} = basketListSlice.actions;
 
 
 export default basketListSlice.reducer;

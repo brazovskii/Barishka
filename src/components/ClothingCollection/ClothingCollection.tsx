@@ -1,7 +1,7 @@
 import Filter from "../Filter/Filter";
 import Card from "../CardProduct/Card/Card";
 import {useAppSelector} from "../../hooks/redux";
-import {Link, useSearchParams} from "react-router-dom";
+import {useSearchParams} from "react-router-dom";
 import "./style.scss";
 import {clothesAPI} from "../../services/ClothesService";
 import React from "react";

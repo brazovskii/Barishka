@@ -7,5 +7,8 @@ export interface IBasket {
 export interface BasketState {
     basket: IBasket[];
     id: number | string;
-    size: string[];
+    keyId: number;
+    size: string;
+    count: number;
+    total: number;
 }

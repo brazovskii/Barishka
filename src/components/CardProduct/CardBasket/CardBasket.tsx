@@ -1,18 +1,21 @@
-import React, {FC, useEffect} from "react";
+import React, {FC} from "react";
 import "./style.scss";
 import {ICardBasket} from "../../../models/IClothes";
 import {useAppDispatch} from "../../../hooks/redux";
-import {getBasketCount, getBasketDelete} from "../../../store/reducers/BasketListSlice";
+import {getBasketDelete, getBasketTotal} from "../../../store/reducers/BasketListSlice";
 
 
 const CardBasket: FC<ICardBasket> = ({descriptions, sizes, img, price, id, keyId}) => {
+
     const dispatch = useAppDispatch()
-    useEffect(() => {
-        dispatch(getBasketCount())
-    }, [id, getBasketCount])
+
+    const onHandledClick = (val: string | number | undefined, price: number) => {
+        dispatch(getBasketDelete(val))
+        dispatch(getBasketTotal(-price))
+    }
     return (
         <>
-            <div className={"cardBasket"} >
+            <div className={"cardBasket"}>
                 <div className={"cardBasket__body"}>
                     <img
                         className={"cardBasket__picture"}
@@ -24,12 +27,11 @@ const CardBasket: FC<ICardBasket> = ({descriptions, sizes, img, price, id, keyId
                         <p className={"cardBasket__description"}>{descriptions}</p>
                         <p className={"cardBasket__size"}>{`${sizes}`}</p>
                     </div>
-                    {/*<button className={'cardBasket__btn'}*/}
-                    {/*        onClick={() => dispatch(getBasketDelete(keyId))}>{'✖'}*/}
-                    {/*</button>*/}
+                    <button className={'cardBasket__btn'}
+                            onClick={() => onHandledClick(keyId, price)}>{'✖'}
+                    </button>
                 </div>
             </div>
-            {/*<Outlet/>*/}
         </>
     );
 };

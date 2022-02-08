@@ -6,7 +6,6 @@ import {useAppDispatch} from "../../hooks/redux";
 import {IHuman} from "../../models/IHuman";
 
 
-
 const HUMAN: IHuman[] = [{
     name: 'girl',
     img: 'https://res.cloudinary.com/duzecrl3s/image/upload/v1644257647/woman_tt9ut6.jpg',

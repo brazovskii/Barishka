@@ -1,13 +1,12 @@
 import React, {FC} from "react";
 import "./style.scss";
-import {Link, useSearchParams} from "react-router-dom";
+import {useSearchParams} from "react-router-dom";
 import Card from "../CardProduct/Card/Card";
 import {clothesAPI} from "../../services/ClothesService";
-import Filter from "../Filter/Filter";
 
 const Search: FC = () => {
-    const {data: clothes, error, isLoading} = clothesAPI.useGetClothesQuery("clothes");
-    let [searchParams, setSearchParams] = useSearchParams();
+    const {data: clothes} = clothesAPI.useGetClothesQuery("clothes");
+    let [searchParams] = useSearchParams();
     return (
         <>
             <div className="main__body">
