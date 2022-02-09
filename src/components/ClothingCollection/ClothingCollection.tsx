@@ -1,10 +1,10 @@
+import React from "react";
 import Filter from "../Filter/Filter";
 import Card from "../CardProduct/Card/Card";
 import {useAppSelector} from "../../hooks/redux";
 import {useSearchParams} from "react-router-dom";
 import "./style.scss";
 import {clothesAPI} from "../../services/ClothesService";
-import React from "react";
 
 const ClothingCollection = () => {
     const {urlHuman} = useAppSelector(state => state.url)

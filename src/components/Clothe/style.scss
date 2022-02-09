@@ -1,5 +1,10 @@
+.select__clothe {
+  position: relative;
+}
+
 .picture {
   display: flex;
+
   &__body {
     height: 100vh;
     width: 40vw;
@@ -62,3 +67,10 @@
   font-size: 1.5rem;
   margin: 5rem;
 }
+
+.card__basket {
+  position: absolute;
+  right: 10rem;
+  top: 3.77rem;
+}
+

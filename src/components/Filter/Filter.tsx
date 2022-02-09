@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import {NavLink, Outlet, useSearchParams} from "react-router-dom";
+import {NavLink, Outlet, useParams, useSearchParams} from "react-router-dom";
 import {ILink} from "../../models/ILink";
 import {useAppDispatch, useAppSelector} from "../../hooks/redux";
 import {getUrParams} from "../../store/reducers/UrlSlice";
@@ -41,7 +41,6 @@ const Filter = () => {
                 value={searchParams.get(`description`) || ''}
                 onChange={event => {
                     dispatch(getSearchValue(value))
-
                     let description = event.target.value;
                     if (description) {
                         setSearchParams({description});

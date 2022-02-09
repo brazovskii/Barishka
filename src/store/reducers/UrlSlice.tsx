@@ -3,11 +3,13 @@ import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 interface UrlState {
     urlHuman: string;
     urlParams: string;
+    modal: boolean;
 }
 
 const initialState: UrlState = {
     urlHuman: 'girl',
-    urlParams: ''
+    urlParams: '',
+    modal: false,
 }
 
 export const urlSlice = createSlice({
@@ -19,9 +21,12 @@ export const urlSlice = createSlice({
         },
         getUrParams(state, action: PayloadAction<string>) {
             state.urlParams = action.payload
+        },
+        getModal(state) {
+            state.modal = !state.modal
         }
     },
 })
-export const {getUrlHuman, getUrParams} = urlSlice.actions;
+export const {getUrlHuman, getUrParams, getModal} = urlSlice.actions;
 
 export default urlSlice.reducer;

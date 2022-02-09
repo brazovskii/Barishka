@@ -9,11 +9,11 @@ import Clothe from "../components/Clothe/Clothe";
 export default function App() {
     return (
         <Routes>
+            <Route index element={<Home/>}/>
             <Route path="/" element={<Layout/>}>
                 <Route path='girl' element={<ClothingCollection/>}/>
                 <Route path="man" element={<ClothingCollection/>}/>
                 <Route path="search" element={<Search/>}/>
-                {/*<Route path="/basket" element={<Basket/>}/>*/}
                 <Route
                     path="*"
                     element={
@@ -23,8 +23,7 @@ export default function App() {
                     }
                 />
             </Route>
-            <Route index element={<Home/>}/>
-            <Route path=":paramsId/:paramsName" element={<Clothe/>}/>
+            <Route path="/:paramsId/:paramsName" element={<Clothe/>}/>
         </Routes>
     );
 }

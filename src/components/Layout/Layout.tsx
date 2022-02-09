@@ -1,15 +1,20 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./style.scss";
 import {Link, Outlet} from "react-router-dom";
-import {useAppDispatch} from "../../hooks/redux";
+import {useAppDispatch, useAppSelector} from "../../hooks/redux";
 import {getUrlHuman} from "../../store/reducers/UrlSlice";
-import BasketMadal from "../Basket/BasketMadol/BasketMadal";
 import Basket from "../Basket/Basket";
+import {getBasketCount} from "../../store/reducers/BasketListSlice";
+import ModalBasket from "../ModalWindow/ModalBasket";
 
 const Layout = () => {
     const [modalActive, setModalActive] = useState(false)
     const dispatch = useAppDispatch()
+    const {count} = useAppSelector(state => state.basketList);
 
+    useEffect(() => {
+        dispatch(getBasketCount())
+    })
 
     return (
         <div className={"king"}>
@@ -29,8 +34,12 @@ const Layout = () => {
                 <span className={"btnHeader__barishka"}>
                     {"Barishka"}
                 </span>
-                <button onClick={() => setModalActive(true)}>Nodal</button>
-                <BasketMadal active={modalActive} setActive={setModalActive}><Basket/></BasketMadal>
+                <button onClick={() => setModalActive(true)} className={'basket__btn'}><img
+                    src={'https://res.cloudinary.com/duzecrl3s/image/upload/v1644339062/basket_zewdf4.png'}
+                    className={'basket__img'}/><span className={count > 0 ? 'countOne' : 'countZero'}>{count}</span>
+                </button>
+                <ModalBasket active={modalActive} setActive={setModalActive}><Basket/></ModalBasket>
+
             </nav>
             <Outlet/>
         </div>

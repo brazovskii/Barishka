@@ -19,6 +19,11 @@ export const basketListSlice = createSlice({
             state.basket = [action.payload, ...state.basket]
 
         },
+        deleteBasket(state) {
+            state.basket = []
+            state.count = 0
+            state.total = 0
+        },
         getIdBasket(state, action: PayloadAction<number | string>) {
             state.id = action.payload
         },
@@ -44,7 +49,8 @@ export const {
     getSizeBasket,
     getBasketCount,
     getBasketDelete,
-    getBasketTotal
+    getBasketTotal,
+    deleteBasket
 } = basketListSlice.actions;
 
 

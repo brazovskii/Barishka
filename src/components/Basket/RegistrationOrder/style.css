@@ -1,0 +1,50 @@
+.order {
+  display: flex;
+  flex-direction: column;
+}
+.order__p {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.order .form {
+  display: flex;
+  flex-direction: column;
+}
+.order .form__name {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  border: solid 1px lightslategray;
+}
+.order .form__phone {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  border: solid 1px lightslategray;
+}
+.order .form__address {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  border: solid 1px lightslategray;
+}
+.order .form__comments {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  border: solid 1px lightslategray;
+}
+.order .form__btn {
+  border: none;
+  border-radius: 0.3rem;
+  background-color: black;
+  padding: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.order .form__btn:hover {
+  background-color: #595959;
+}
+
+/*# sourceMappingURL=style.css.map */
