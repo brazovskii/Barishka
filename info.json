@@ -1,6 +1,20 @@
 {
   "clothes": [
     {
+      "id": 260,
+      "price": 200,
+      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1644420973/man/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/RTLAAK591901_14539199_1_v1_2x_qysv0i.jpg",
+      "descriptions": "Худи adidas",
+      "name": "man",
+      "category": "hudi",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
       "id": 20,
       "price": 29,
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138257/girl/hudi/RTLAAQ696601_15098303_1_v1_2x_asixed.jpg",
@@ -225,6 +239,20 @@
       ]
     },
     {
+      "id": 258,
+      "price": 228,
+      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1644421003/man/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/RTLAAX576301_15824892_1_v1_lujufs.jpg",
+      "descriptions": "Кроссовки adidas",
+      "name": "man",
+      "category": "shoes",
+      "size": [
+        "40",
+        "41",
+        "42",
+        "43"
+      ]
+    },
+    {
       "id": 216,
       "price": 228,
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138298/girl/%D0%BE%D0%B1%D1%83%D0%B2%D1%8C/sneakers1_vdir1f.jpg",
@@ -236,6 +264,20 @@
         "38",
         "40",
         "42"
+      ]
+    },
+    {
+      "id": 256,
+      "price": 329,
+      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1644420853/man/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/RTLAAO391901_14890100_1_v1_2x_hddav9.jpg",
+      "descriptions": "Куртка nike",
+      "name": "man",
+      "category": "outerwear",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
       ]
     },
     {
@@ -351,6 +393,20 @@
       ]
     },
     {
+      "id": 252,
+      "price": 429,
+      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1644420949/man/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/RTLAAO544901_14893529_1_v1_2x_zrnium.jpg",
+      "descriptions": "Спортивный костюм adidas",
+      "name": "man",
+      "category": "tracksuits",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
       "id": 225,
       "price": 429,
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923762/girl/%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5%20%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLAAL373901_14561696_1_v1_2x_kmyba3.jpg",
@@ -426,6 +482,20 @@
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643923949/girl/%D1%88%D1%82%D0%B0%D0%BD%D1%8B/RTLABC525101_16354520_1_v1_2x_uzt2rf.jpg",
       "descriptions": "Джинсы bershka",
       "name": "girl",
+      "category": "jeans",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
+    },
+    {
+      "id": 254,
+      "price": 129,
+      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1644420922/man/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/RTLAAM592701_14704697_1_v1_2x_lkwld5.jpg",
+      "descriptions": "Джинсы bershka",
+      "name": "man",
       "category": "jeans",
       "size": [
         "S",
@@ -587,42 +657,21 @@
         "L",
         "XL"
       ]
-    }
-  ],
-  "orders": [
-    {
-      "name": "Aleksei Brazovskii",
-      "phone": "80933432",
-      "address": "Kolesnikoda 17",
-      "comments": "tut",
-      "total": 125,
-      "basket": [
-        {
-          "id": 27,
-          "keyId": 1644415806444,
-          "size": [
-            "XL"
-          ]
-        }
-      ],
-      "id": 1
     },
     {
-      "name": "wda",
-      "phone": "dw",
-      "address": "wda",
-      "comments": "wd",
-      "total": 27,
-      "basket": [
-        {
-          "id": 22,
-          "keyId": 1644416455399,
-          "size": [
-            "XL"
-          ]
-        }
-      ],
-      "id": 2
+      "id": 251,
+      "price": 29,
+      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1644420900/man/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/RTLAAX670201_15838358_1_v1_2x_cu87es.jpg",
+      "descriptions": "Майка bershka",
+      "name": "man",
+      "category": "futbolki",
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     }
-  ]
+  ],
+  "orders": []
 }
