@@ -1,6 +1,7 @@
 .order {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 
   &__p {
     font-weight: bold;
@@ -39,11 +40,31 @@
       border: solid 1px lightslategray;
     }
 
+    &__price {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__total {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &__sum {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
     &__check {
+      display: flex;
+      gap: 1rem;
+      margin-top: 3rem;
+      text-decoration: underline;
     }
 
 
     &__btn {
+      margin-top: 1rem;
       border: none;
       border-radius: 0.3rem;
       background-color: black;
@@ -54,6 +75,10 @@
 
       &:hover {
         background-color: #595959;
+      }
+
+      &:disabled {
+        background-color: #cbcbcb;
       }
     }
   }

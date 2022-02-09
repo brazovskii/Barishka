@@ -13,7 +13,7 @@ const ModalBasket: FC<IModalBasket> = ({active, setActive, children}) => {
     const dispatch = useAppDispatch()
     const onHandledClick = () => {
         setActive(false)
-        dispatch(getModal())
+        dispatch(getModal(false))
     }
     return (
         <div className={active ? 'modal active' : "modal"} onClick={() => onHandledClick()}>

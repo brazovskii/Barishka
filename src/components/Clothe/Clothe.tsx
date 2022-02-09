@@ -18,16 +18,19 @@ const Clothe = () => {
     let itCategory = params.paramsName;
     const {data: clothes} = clothesAPI.useGetClothesQuery("clothes");
     const {size} = useAppSelector(state => state.basketList);
-    const onHandledClick = (id: number, keyBasket: number, size: string, price: number) => {
-        dispatch(getBasket({
-            id: id,
-            keyId: keyBasket,
-            size: [size]
-        }))
-        dispatch(getBasketTotal(price))
-    }
-    const [modalActive, setModalActive] = useState(false)
     const {count} = useAppSelector(state => state.basketList);
+    const [modalActive, setModalActive] = useState(false)
+    const onHandledClick = (id: number, keyBasket: number, size: string, price: number) => {
+        if (size) {
+            dispatch(getBasket({
+                id: id,
+                keyId: keyBasket,
+                size: [size]
+            }))
+            dispatch(getBasketTotal(price))
+        }
+    }
+
     useEffect(() => {
         dispatch(getBasketCount())
     })

@@ -1,10 +1,15 @@
 import {IBasket} from "./IBasket";
 
-export interface IOrders {
-    total: number;
+export interface IForm {
     name: string;
-    phone: number | string;
-    address: number | string;
+    phone: string;
+    address: string;
     comments: string;
-    basket: IBasket[]
+    total: number;
+    basket: IBasket[];
+    id?: number;
+}
+
+export interface IOrders {
+    orders: IForm;
 }

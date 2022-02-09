@@ -1,0 +1,12 @@
+.admin {
+  display: flex;
+  justify-content: space-around;
+
+  &__link {
+    font-weight: bold;
+    padding: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+  }
+}

@@ -1,6 +1,7 @@
 .order {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .order__p {
   font-weight: bold;
@@ -34,7 +35,26 @@
   border-radius: 0.5rem;
   border: solid 1px lightslategray;
 }
+.order .form__price {
+  display: flex;
+  justify-content: space-between;
+}
+.order .form__total {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.order .form__sum {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.order .form__check {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  text-decoration: underline;
+}
 .order .form__btn {
+  margin-top: 1rem;
   border: none;
   border-radius: 0.3rem;
   background-color: black;
@@ -45,6 +65,9 @@
 }
 .order .form__btn:hover {
   background-color: #595959;
+}
+.order .form__btn:disabled {
+  background-color: #cbcbcb;
 }
 
 /*# sourceMappingURL=style.css.map */

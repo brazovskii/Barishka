@@ -1,7 +1,5 @@
 import {IClothes} from "../../models/IClothes";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import axios from "axios";
-import {AppDispatch} from "../store";
 
 
 interface CardState {
@@ -34,19 +32,5 @@ export const collectionSlice = createSlice({
         }
     },
 })
-
-
-export const fetchCollection = () => async (dispatch: AppDispatch) => {
-    try {
-        dispatch(collectionSlice.actions.collectionFetching());
-        const response = await axios.get<IClothes[]>(
-            `http://localhost:5000/clothes`
-        );
-        dispatch(collectionSlice.actions.collectionFetchingSuccess(response.data));
-    } catch (e: any) {
-        dispatch(collectionSlice.actions.collectionFetchingError(e.message));
-    }
-};
-
 
 export default collectionSlice.reducer;

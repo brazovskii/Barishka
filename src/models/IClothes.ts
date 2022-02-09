@@ -1,4 +1,9 @@
+import {IBasket} from "./IBasket";
+
 export interface IClothes {
+    basket?: IBasket;
+    phone?: string;
+    address?: string;
     id: number;
     price: number;
     img: string;

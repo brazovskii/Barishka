@@ -1,6 +1,6 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 import {IClothes} from "../models/IClothes";
-import {IOrders} from "../models/IOrders";
+import {IForm} from "../models/IOrders";
 
 
 export const clothesAPI = createApi({
@@ -14,11 +14,26 @@ export const clothesAPI = createApi({
             query: (url) => `${url}`,
             providesTags: (result) => ["Orders"],
         }),
-        createOrder: build.mutation<IOrders, IOrders>({
+        createClothe: build.mutation<IClothes, IClothes>({
+            query: (order) => ({
+                url: `/clothes`,
+                method: "POST",
+                body: order,
+            }),
+            invalidatesTags: ["Orders"],
+        }),
+        createOrder: build.mutation<IForm, IForm>({
             query: (order) => ({
                 url: `/orders`,
                 method: "POST",
                 body: order,
+            }),
+            invalidatesTags: ["Orders"],
+        }),
+        deleteClothe: build.mutation<IClothes[], number | string>({
+            query: (id) => ({
+                url: `/clothes/${id}`,
+                method: "DELETE",
             }),
             invalidatesTags: ["Orders"],
         })

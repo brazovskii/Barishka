@@ -35,5 +35,8 @@
 .basket__footer__btn:hover {
   background-color: #7fefcd;
 }
+.basket__footer__btn:disabled {
+  background-color: #9ff3d8;
+}
 
 /*# sourceMappingURL=style.css.map */

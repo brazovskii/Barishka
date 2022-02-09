@@ -22,8 +22,8 @@ export const urlSlice = createSlice({
         getUrParams(state, action: PayloadAction<string>) {
             state.urlParams = action.payload
         },
-        getModal(state) {
-            state.modal = !state.modal
+        getModal(state, action: PayloadAction<boolean>) {
+            state.modal = action.payload
         }
     },
 })

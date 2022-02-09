@@ -1,20 +1,15 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import "./style.scss";
 import {Link, Outlet} from "react-router-dom";
 import {useAppDispatch, useAppSelector} from "../../hooks/redux";
 import {getUrlHuman} from "../../store/reducers/UrlSlice";
 import Basket from "../Basket/Basket";
-import {getBasketCount} from "../../store/reducers/BasketListSlice";
 import ModalBasket from "../ModalWindow/ModalBasket";
 
 const Layout = () => {
     const [modalActive, setModalActive] = useState(false)
     const dispatch = useAppDispatch()
     const {count} = useAppSelector(state => state.basketList);
-
-    useEffect(() => {
-        dispatch(getBasketCount())
-    })
 
     return (
         <div className={"king"}>

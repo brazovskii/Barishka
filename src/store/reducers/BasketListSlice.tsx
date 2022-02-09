@@ -6,7 +6,7 @@ const initialState: BasketState = {
     basket: [],
     keyId: 0,
     id: '',
-    size: 'S',
+    size: '',
     count: 0,
     total: 0
 }

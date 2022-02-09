@@ -3,6 +3,7 @@ import collectionReducer from './reducers/CollectionSlice'
 import urlReducer from './reducers/UrlSlice'
 import searchReducer from './reducers/SearchSlice'
 import basketReducer from './reducers/BasketListSlice'
+import formReducer from './reducers/FormSlice'
 import {clothesAPI} from "../services/ClothesService";
 
 const rootReducer = combineReducers({
@@ -10,6 +11,7 @@ const rootReducer = combineReducers({
     url: urlReducer,
     search: searchReducer,
     basketList: basketReducer,
+    formList: formReducer,
     [clothesAPI.reducerPath]: clothesAPI.reducer,
 });
 

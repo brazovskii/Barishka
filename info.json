@@ -176,10 +176,10 @@
       "name": "girl",
       "category": "shoes",
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        "36",
+        "38",
+        "40",
+        "42"
       ]
     },
     {
@@ -190,10 +190,10 @@
       "name": "girl",
       "category": "shoes",
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        "36",
+        "38",
+        "40",
+        "42"
       ]
     },
     {
@@ -204,10 +204,10 @@
       "name": "girl",
       "category": "shoes",
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        "36",
+        "38",
+        "40",
+        "42"
       ]
     },
     {
@@ -218,10 +218,10 @@
       "name": "girl",
       "category": "shoes",
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        "36",
+        "38",
+        "40",
+        "42"
       ]
     },
     {
@@ -232,10 +232,10 @@
       "name": "girl",
       "category": "shoes",
       "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
+        "36",
+        "38",
+        "40",
+        "42"
       ]
     },
     {
@@ -591,13 +591,38 @@
   ],
   "orders": [
     {
-      "name": "1",
-      "phone": "2",
-      "address": "3",
-      "comments": "4",
-      "total": 0,
-      "basket": [],
+      "name": "Aleksei Brazovskii",
+      "phone": "80933432",
+      "address": "Kolesnikoda 17",
+      "comments": "tut",
+      "total": 125,
+      "basket": [
+        {
+          "id": 27,
+          "keyId": 1644415806444,
+          "size": [
+            "XL"
+          ]
+        }
+      ],
       "id": 1
+    },
+    {
+      "name": "wda",
+      "phone": "dw",
+      "address": "wda",
+      "comments": "wd",
+      "total": 27,
+      "basket": [
+        {
+          "id": 22,
+          "keyId": 1644416455399,
+          "size": [
+            "XL"
+          ]
+        }
+      ],
+      "id": 2
     }
   ]
 }
