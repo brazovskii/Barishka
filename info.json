@@ -1,79 +1,9 @@
 {
   "clothes": [
     {
-      "id": 260,
-      "price": 200,
-      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1644420973/man/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/RTLAAK591901_14539199_1_v1_2x_qysv0i.jpg",
-      "descriptions": "Худи adidas",
-      "name": "man",
-      "category": "hudi",
-      "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
-    },
-    {
-      "id": 20,
-      "price": 29,
-      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138257/girl/hudi/RTLAAQ696601_15098303_1_v1_2x_asixed.jpg",
-      "descriptions": "Худи adidas",
-      "name": "girl",
-      "category": "hudi",
-      "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
-    },
-    {
-      "id": 21,
-      "price": 25,
-      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138257/girl/hudi/RTLAAY474401_16028265_1_v1_2x_awvitj.jpg",
-      "descriptions": "Худи prada",
-      "name": "girl",
-      "category": "hudi",
-      "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
-    },
-    {
-      "id": 22,
-      "price": 27,
-      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138256/girl/hudi/RTLAAO146701_14990373_1_v1_2x_tfrfno.jpg",
-      "descriptions": "Худи nike",
-      "name": "girl",
-      "category": "hudi",
-      "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
-    },
-    {
       "id": 23,
       "price": 22,
       "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138256/girl/hudi/NI464EWMQEW2_14065923_1_v1_2x_v43ey6.jpg",
-      "descriptions": "Худи nike",
-      "name": "girl",
-      "category": "hudi",
-      "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
-    },
-    {
-      "id": 24,
-      "price": 28,
-      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138256/girl/hudi/RTLAAO552801_14893593_1_v1_2x_ltbzbb.jpg",
       "descriptions": "Худи nike",
       "name": "girl",
       "category": "hudi",
@@ -91,20 +21,6 @@
       "descriptions": "Худи nike",
       "name": "girl",
       "category": "hudi",
-      "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ]
-    },
-    {
-      "id": 26,
-      "price": 129,
-      "img": "https://res.cloudinary.com/duzecrl3s/image/upload/v1643138299/girl/%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D1%8F%D1%8F%20%D0%BE%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0/outerwear3_afucaq.jpg",
-      "descriptions": "Куртка nike",
-      "name": "girl",
-      "category": "outerwear",
       "size": [
         "S",
         "M",
@@ -673,5 +589,30 @@
       ]
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "name": "Aleksei Brazovskii",
+      "phone": "23423423",
+      "address": "Kolesnikoda 17",
+      "comments": "fdsfsddffsf",
+      "total": 254,
+      "basket": [
+        {
+          "id": 213,
+          "keyId": 1644425006258,
+          "size": [
+            "38"
+          ]
+        },
+        {
+          "id": 20,
+          "keyId": 1644424983286,
+          "size": [
+            "M"
+          ]
+        }
+      ],
+      "id": 1
+    }
+  ]
 }
