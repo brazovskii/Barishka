@@ -1,0 +1,22 @@
+.cardBasket__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+.cardBasket__picture {
+  max-width: 50%;
+  margin-top: 1rem;
+}
+.cardBasket__price {
+  font-weight: bold;
+}
+.cardBasket__btn {
+  background-color: white;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

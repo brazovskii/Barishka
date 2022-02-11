@@ -1,0 +1,87 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &__p {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 0.5rem;
+      border: solid 1px lightslategray;
+    }
+
+    &__phone {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 0.5rem;
+      border: solid 1px lightslategray;
+    }
+
+    &__address {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 0.5rem;
+      border: solid 1px lightslategray;
+    }
+
+    &__comments {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 0.5rem;
+      border: solid 1px lightslategray;
+    }
+
+    &__price {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__total {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &__sum {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &__check {
+      display: flex;
+      gap: 1rem;
+      margin-top: 3rem;
+      text-decoration: underline;
+    }
+
+
+    &__btn {
+      margin-top: 1rem;
+      border: none;
+      border-radius: 0.3rem;
+      background-color: black;
+      padding: 1rem;
+      color: white;
+      margin-bottom: 1rem;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #595959;
+      }
+
+      &:disabled {
+        background-color: #cbcbcb;
+      }
+    }
+  }
+
+
+}
