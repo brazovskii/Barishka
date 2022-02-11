@@ -1,0 +1,46 @@
+.basket {
+  position: relative;
+
+  &__p {
+    position: sticky;
+    top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 2;
+    max-width: max-content;
+  }
+
+  &__footer {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    z-index: 3;
+    background-color: white;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    &__btn {
+      border: none;
+      border-radius: 0.3rem;
+      background-color: #00ca8d;
+      padding: 1rem;
+      color: white;
+      margin-bottom: 1rem;
+      font-weight: bold;
+
+      &:hover {
+        background-color: #7fefcd;
+      }
+      &:disabled{
+        background-color: #9ff3d8;
+      }
+    }
+  }
+
+}

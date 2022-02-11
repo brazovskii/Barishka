@@ -1,0 +1,12 @@
+.main__body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.main__loader {
+  margin: 5rem;
+}

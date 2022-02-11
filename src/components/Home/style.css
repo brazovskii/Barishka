@@ -1,0 +1,36 @@
+.headers {
+  font-size: 1rem;
+}
+
+.human {
+  display: flex;
+  position: relative;
+}
+.human .girl {
+  height: 100vh;
+  width: 50vw;
+}
+.human .girl__p {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-size: 5rem;
+  color: white;
+  transform: rotate(90deg);
+  width: 20rem;
+}
+.human .man {
+  height: 100vh;
+  width: 50vw;
+}
+.human .man__p {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  font-size: 5rem;
+  color: white;
+  transform: rotate(90deg);
+  width: 20rem;
+}
+
+/*# sourceMappingURL=style.css.map */

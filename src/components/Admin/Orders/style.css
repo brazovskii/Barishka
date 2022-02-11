@@ -1,0 +1,9 @@
+.orders__body {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

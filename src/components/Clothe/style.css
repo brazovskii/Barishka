@@ -1,0 +1,68 @@
+.select__clothe {
+  position: relative;
+}
+
+.picture {
+  display: flex;
+}
+.picture__body {
+  height: 100vh;
+  width: 40vw;
+}
+.picture__header {
+  display: flex;
+}
+.picture__description {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+.picture__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+.picture__price {
+  color: red;
+  font-size: 1.5rem;
+}
+.picture__check {
+  padding: 3rem;
+}
+.picture__sale {
+  color: lightslategray;
+  text-decoration: line-through;
+}
+.picture__section--btn {
+  display: flex;
+  align-items: center;
+}
+
+.sale {
+  color: red;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.params {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;
+}
+
+.recommendation {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 5rem;
+}
+
+.card__basket {
+  position: absolute;
+  right: 10rem;
+  top: 3.77rem;
+}
+
+/*# sourceMappingURL=style.css.map */

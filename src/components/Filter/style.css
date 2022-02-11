@@ -1,0 +1,27 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+.filter__body {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+.filter__link {
+  color: black;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.filter .inputSearch {
+  font-size: 1.5rem;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
